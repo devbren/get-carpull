@@ -3,7 +3,7 @@ require('dotenv').config();
 
 let sequelize;
 
-// will need to have JAWSDB installed into the app, still need to figure that one out
+// will need to have JAWSDB installed into the app, do that after deploying to Heroku
 
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
