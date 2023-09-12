@@ -1,0 +1,30 @@
+[
+    {
+        "make": "Honda",
+        "model": "Civic",
+        "year": "2002",
+        "forSale": true
+        
+    },
+    {
+        "make": "Jeep",
+        "model": "Grand Cherokee",
+        "year": "2004",
+        "forSale": false
+
+    },
+    {
+        "make": "Nissan",
+        "model": "Sentra",
+        "year": "2007",
+        "forSale": false
+
+    },
+    {
+        "make": "Infiniti",
+        "model": "G37x",
+        "year": "2011",
+        "forSale": true
+
+    }
+]
