@@ -1,14 +1,16 @@
 const express = require('express');
 const path = require('path');
+const exphbs = require('express-handlebars');
+const session = require('express-session');
 const app = express();
 const fs = require('fs');
 const PORT = process.env.PORT || 3001;
 const helpers = require('./utils/helpers');
 const sequelize = require('./config/connection');
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const hbs = exphbs.create({ helpers });
 const routes = require('./controllers');
 
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
   secret: 'a5yhtj1tr9541jht96',
