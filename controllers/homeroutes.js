@@ -10,9 +10,6 @@ router.get('/', withAuth, async (req, res) => {
     });
     console.log(carData)
 
-
-
-
     //renders based off homepage.handlebars
   res.render('homepage', {
     users,
