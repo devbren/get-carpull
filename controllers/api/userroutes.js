@@ -1,6 +1,16 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+router.post('/register', (req, res) => {
+  User.create(req.body)
+    .then((newUser) => {
+      res.json(newUser);
+    })
+    .catch((err) => {
+      res.json(err);
+    });
+});
+
 router.post('/login', async (req, res) => {
     try {
 
