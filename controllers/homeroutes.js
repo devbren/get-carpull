@@ -10,11 +10,11 @@ router.get('/', withAuth, async (req, res) => {
     });
     console.log(carData)
 
-    //renders based off homepage.handlebars
-  res.render('homepage', {
-    users,
-    logged_in: req.session.logged_in,
-  });
+  //   //renders based off homepage.handlebars
+  // res.render('homepage', {
+  //   users,
+  //   logged_in: req.session.logged_in,
+  // });
 } catch (err) {
   res.status(500).json(err);
 }
