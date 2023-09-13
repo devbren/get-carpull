@@ -38,6 +38,6 @@ app.use(routes);
 
 // force true at the beginning to sequelize knows to look for updated changes to the models
 // turn to false when done working on models
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
