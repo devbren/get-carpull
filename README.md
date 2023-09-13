@@ -44,9 +44,6 @@ THEN I
 ## Installation
 In order to run this application you must have the following installed: Visual Studio Code, node, npm, Tailwind, Cloudinary and Heroku.
 
-## Deploy to Heroku
-https://www.herokucdn.com/deploy/button.svg
-
 ## Links
 link to video: 
 
