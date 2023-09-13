@@ -21,6 +21,83 @@
 
     },
     {
+        "make": "Buick",
+        "model": "Encore",
+        "year": "2017",
+        "forSale": false
+
+    },
+    {
+        "make": "Jeep",
+        "model": "Rubicon",
+        "year": "2020",
+        "forSale": false
+
+    },
+    {
+        "make": "Volkswagon",
+        "model": "Bus",
+        "year": "1968",
+        "forSale": false
+
+    },
+    {
+        "make": "Jeep",
+        "model": "Cherokee",
+        "year": "2022",
+        "forSale": false
+
+    },
+    {
+        "make": "Honda",
+        "model": "Civic",
+        "year": "2021",
+        "forSale": false
+
+    },
+    {
+        "make": "Ford",
+        "model": "Escape",
+        "year": "2019",
+        "forSale": true
+
+    },
+    {
+        "make": "Subaru",
+        "model": "Forester",
+        "year": "2019",
+        "forSale": true
+
+    },
+    {
+        "make": "Ford",
+        "model": "Mustang",
+        "year": "2022",
+        "forSale": false
+
+    },
+    {
+        "make": "Dodge",
+        "model": "Charger",
+        "year": "2021",
+        "forSale": false
+
+    },
+    {
+        "make": "Ford",
+        "model": "F150 Truck",
+        "year": "2020",
+        "forSale": true
+
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Camero",
+        "year": "2022",
+        "forSale": true
+
+    },
+    {
         "make": "Infiniti",
         "model": "G37x",
         "year": "2011",
