@@ -1,12 +1,79 @@
-{{!-- this is completely wrong for what we need --}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Car-Pull</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1></h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Cars</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
 
-{{#each users as |user| }}
-<div class="row align-center mb-5">
-  <div class="col-md-6">
-    <h2>{{{get_emoji}}} {{user.name}}</h2>
-  </div>
-  <div class="col-md-6">
-    <h3><a href="mailto:{{user.email}}">{{user.email}}</a></h3>
-  </div>
-</div>
-{{/each}}
+    <main>
+      <section class="search-bar">
+        <h2>Search for Cars</h2>
+        <form id="car-search-form">
+          <label for="year">Year:</label>
+          <input type="number" id="year" name="year" placeholder="Enter year" />
+
+          <label for="brand">Brand:</label>
+          <input
+            type="text"
+            id="brand"
+            name="brand"
+            placeholder="Enter brand"
+          />
+
+          <label for="model">Model:</label>
+          <input
+            type="text"
+            id="model"
+            name="model"
+            placeholder="Enter model"
+          />
+
+          <button type="submit">Search</button>
+        </form>
+      </section>
+
+      <section class="car-list">
+        <h2>Car Listings</h2>
+        <ul id="car-list">
+          <!-- Car listings will be rendered here using Handlebars template -->
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Car Sales</p>
+    </footer>
+
+    <!-- Handlebars.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+    <!-- Handlebars template -->
+    <script id="car-template" type="text/x-handlebars-template">
+      {{#each cars}}
+        <li>
+          <img src="{{image}}" alt="{{brand}} {{model}}" />
+          <h3>{{brand}} {{model}}</h3>
+          <p>Year: {{year}}</p>
+          <p>Price: ${{price}}</p>
+        </li>
+      {{/each}}
+    </script>
+
+    <!-- JavaScript file for handling data and rendering templates -->
+    <script src="script.js"></script>
+  </body>
+</html>
