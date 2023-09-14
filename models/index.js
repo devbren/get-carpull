@@ -8,6 +8,6 @@ User.hasMany(Cars, {
 
 Cars.belongsTo(User, {
     foreignKey: 'user_id',
-})
+});
 
 module.exports = { User, Cars };
