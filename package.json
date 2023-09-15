@@ -17,6 +17,8 @@
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.3",
     "mysql2": "^3.6.1",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "tailwindcss": "latest",
+    "daisyui": "latest"
   }
 }
