@@ -19,11 +19,12 @@ Cars.init(
         make: {
             type: DataTypes.STRING,
             allowNull: false,
+            unique: false
         },
         model: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: true,
+            unique: false,
         },
         year: {
             type: DataTypes.STRING,

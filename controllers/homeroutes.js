@@ -24,16 +24,17 @@ router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
     return;
-  }
-
+  } else {
   res.render('login');
+  }
 });
 
 router.get('/register', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
     return;
+  } else {
+    res.render('register');
   }
-  res.render('register');
 });
 module.exports = router;
