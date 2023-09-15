@@ -32,9 +32,10 @@ Cars.init(
                 len: [8],
             },
         },
-        // photoURL:{
-        //     type: DataTypes.STRING,
-        // },
+         photoURL:{
+             type: DataTypes.STRING,
+             allowNull: true,
+         },
         forSale: {
             type: DataTypes.BOOLEAN,
         },
