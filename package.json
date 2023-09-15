@@ -19,6 +19,7 @@
     "mysql2": "^3.6.1",
     "sequelize": "^6.3.5",
     "tailwindcss": "latest",
-    "daisyui": "latest"
+    "daisyui": "latest",
+    "cloudinary": "latest"
   }
 }
