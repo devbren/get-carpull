@@ -3,105 +3,120 @@
         "make": "Honda",
         "model": "Civic",
         "year": "2002",
-        "forSale": true
+        "forSale": true,
+        "photoURL":"https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733406/Honda_Civis_ro0rlu.jpg"
         
     },
     {
         "make": "Jeep",
         "model": "Grand Cherokee",
         "year": "2004",
-        "forSale": false
+        "forSale": false,
+        "photoURL":"https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733271/Jeep_Cherokee_ugd9qj.jpg"
 
     },
     {
         "make": "Nissan",
         "model": "Sentra",
         "year": "2007",
-        "forSale": false
+        "forSale": false,
+        "photoURL": ""
 
     },
     {
         "make": "Buick",
         "model": "Encore",
         "year": "2017",
-        "forSale": false
+        "forSale": false,
+        "photoURL": ""
 
     },
     {
         "make": "Jeep",
         "model": "Rubicon",
         "year": "2020",
-        "forSale": false
+        "forSale": false,
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733494/Jeep_Renegade_plgks7.jpg"
 
     },
     {
         "make": "Volkswagon",
         "model": "Bus",
         "year": "1968",
-        "forSale": false
+        "forSale": false,
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733491/Volkswagon_Bus_cuauze.jpg"
 
     },
     {
         "make": "Jeep",
         "model": "Cherokee",
         "year": "2022",
-        "forSale": false
+        "forSale": false,
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733271/Jeep_Cherokee_ugd9qj.jpg"
 
     },
     {
         "make": "Honda",
         "model": "Civic",
         "year": "2021",
-        "forSale": false
+        "forSale": false,
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733406/Honda_Civis_ro0rlu.jpg"
 
     },
     {
         "make": "Ford",
         "model": "Escape",
         "year": "2019",
-        "forSale": true
+        "forSale": true,
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733439/Ford_Escape_a8xgor.jpg"
 
     },
     {
         "make": "Subaru",
         "model": "Forester",
         "year": "2019",
-        "forSale": true
+        "forSale": true,
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694735678/Subaru_Outback_osj1oh.jpg"
 
     },
     {
         "make": "Ford",
         "model": "Mustang",
         "year": "2022",
-        "forSale": false
+        "forSale": false,
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694735678/Ford_Mustang_e8fgar.jpg"
 
     },
     {
         "make": "Dodge",
         "model": "Charger",
         "year": "2021",
-        "forSale": false
+        "forSale": false,
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733436/Dodge_Charger_cgzm5c.jpg"
 
     },
     {
         "make": "Ford",
         "model": "F150 Truck",
         "year": "2020",
-        "forSale": true
+        "forSale": true,
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733439/Ford_Pickup_xjw7ih.jpg"
 
     },
     {
         "make": "Chevrolet",
         "model": "Camero",
         "year": "2022",
-        "forSale": true
+        "forSale": true,
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733437/camero_u0qmpr.jpg"
 
     },
     {
         "make": "Infiniti",
         "model": "G37x",
         "year": "2011",
-        "forSale": true
+        "forSale": true,
+        "photoURL": ""
 
     }
 ]
