@@ -20,7 +20,7 @@
         "model": "Sentra",
         "year": "2007",
         "forSale": false,
-        "photoURL": ""
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694745346/GPC2_u7igwi.png"
 
     },
     {
@@ -28,7 +28,7 @@
         "model": "Encore",
         "year": "2017",
         "forSale": false,
-        "photoURL": ""
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694745346/GPC2_u7igwi.png"
 
     },
     {
@@ -116,7 +116,7 @@
         "model": "G37x",
         "year": "2011",
         "forSale": true,
-        "photoURL": ""
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694745346/GPC2_u7igwi.png"
 
     }
 ]
