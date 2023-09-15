@@ -4,11 +4,13 @@ const exphbs = require('express-handlebars');
 const session = require('express-session');
 const app = express();
 const fs = require('fs');
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 3001;
 const helpers = require('./utils/helpers');
 const sequelize = require('./config/connection');
 const hbs = exphbs.create({ helpers });
 const routes = require('./controllers');
+const cloudinary = require("./config/cloudinary");
+const uploader = require("./config/multer");
 
 // hello world
 

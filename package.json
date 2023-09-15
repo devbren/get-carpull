@@ -11,15 +11,16 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "cloudinary": "latest",
     "connect-session-sequelize": "^7.1.7",
+    "daisyui": "latest",
     "dotenv": "^8.2.0",
     "express": "^4.18.2",
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.3",
+    "multer": "^1.4.5-lts.1",
     "mysql2": "^3.6.1",
     "sequelize": "^6.3.5",
-    "tailwindcss": "latest",
-    "daisyui": "latest",
-    "cloudinary": "latest"
+    "tailwindcss": "latest"
   }
 }
