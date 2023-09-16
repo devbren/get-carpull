@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Car-Pull</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="../public/css/styles.css">
 </head>
+
 <body>
     <header>
         <h1></h1>
@@ -25,7 +27,7 @@
             <form id="car-search-form">
                 <label for="year">Year:</label>
                 <input type="number" id="year" name="year" placeholder="Enter year">
-                
+
                 <label for="brand">Brand:</label>
                 <input type="text" id="brand" name="brand" placeholder="Enter brand">
 
@@ -55,7 +57,7 @@
     <script id="car-template" type="text/x-handlebars-template">
         {{#each cars}}
         <li>
-            <img src="{{image}}" alt="{{brand}} {{model}}">
+            <img src={{photoURL}} alt={{make}} {{model}}>
             <h3>{{brand}} {{model}}</h3>
             <p>Year: {{year}}</p>
             <p>Price: ${{price}}</p>
@@ -66,4 +68,5 @@
     <!-- JavaScript file for handling data and rendering templates -->
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -4,6 +4,7 @@
   "description": "Create an appliction to find and buy cars.",
   "main": "server.js",
   "scripts": {
+    "tailwindcss-build": "tailwindcss build ./styles.css -o public/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
