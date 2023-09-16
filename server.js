@@ -14,6 +14,23 @@ const uploader = require("./config/multer");
 
 // hello world
 
+// LINDA  added app.get for the homepage in homepage.handlebars
+
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'handlebars');
+app.set(express.static(path.join(__dirname, 'public')));
+
+app.get('../homepage.handlebars', (req, res) =>  {
+  res.render('server');
+})
+
+//app.listen(3000, () => {
+//  console.log('The application is listening on port 3000');
+//})
+
+
+// end of code added
+
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
@@ -40,7 +57,7 @@ app.use(routes);
 
 // force true at the beginning to sequelize knows to look for updated changes to the models
 // turn to false when done working on models
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
 
