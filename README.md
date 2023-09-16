@@ -24,21 +24,21 @@ I WANT to be able to list and buy cars
 SO THAT I can easily and securely make purchases, or sell vechicles that I own.
 
 ## Acceptance Criteria
-GIVEN a 
-WHEN I
-THEN I 
+GIVEN an application to buy or sell a car
+WHEN I login or create an account
+THEN I can see local cars listed. The ones for sale will be noted as such.
 
-WHEN I
-THEN I am 
-WHEN I 
-THEN I 
+WHEN I click on a vehicle
+THEN I can see an expanded view of the car and description 
+WHEN I login or create an account
+THEN I see if the car listed is for sale.
 
-WHEN I 
-THEN 
-WHEN I 
-THEN 
-WHEN I 
-THEN I 
+WHEN I click on a vehicle
+THEN I can see the name and email of the seller
+WHEN I click on the compare button
+THEN I can compare several vehicles side by side
+WHEN I buy a vehicle
+THEN I can go back and see a list of my vehicles.
 
 
 ## Installation
@@ -64,13 +64,6 @@ Images from application:
 ![Static Badge](https://img.shields.io/badge/npm-blue)
 ![Static Badge](https://img.shields.io/badge/Tailwind-purple)
 ![Static Badge](https://img.shields.io/badge/Coudinary-blue)
-
-
-
-
-
-
-## Tests
 
 
 ## Credit
