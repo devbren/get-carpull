@@ -1,51 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get Car-Pull</title>
-    <link rel="stylesheet" href="styles.css"> 
-</head>
-<body>
-    <header>
-        <h1></h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Cars</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <header class="bg-gray-900 p-4">
+      <h1 class="text-3xl text-green-400 font-serif font-semibold">
+        Get Car-Pull
+      </h1>
+      <nav class="mt-4">
+        <ul class="flex space-x-4">
+          <li><a href="#" class="text-gray-300">Home</a></li>
+          <li><a href="#" class="text-gray-300">Cars</a></li>
+          <li><a href="#" class="text-gray-300">About Us</a></li>
+          <li><a href="#" class="text-gray-300">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-        <section class="search-bar">
-            <h2>Search for Cars</h2>
-            <form id="car-search-form">
-                <label for="year">Year:</label>
-                <input type="number" id="year" name="year" placeholder="Enter year">
-                
-                <label for="brand">Brand:</label>
-                <input type="text" id="brand" name="brand" placeholder="Enter brand">
+    <main class="container mx-auto mt-8 p-4">
+      <section class="bg-green-400 shadow-md rounded-md p-4">
+        <h2 class="text-2xl font-semibold mb-4">Search for Cars</h2>
+        <form id="car-search-form" class="space-y-4">
+          <div
+            class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4"
+          >
+            <div class="flex-1">
+              <label for="year" class="block text-gray-700">Year:</label>
+              <input
+                type="number"
+                id="year"
+                name="year"
+                placeholder="Enter year"
+                class="border rounded-md p-2 w-full"
+              />
+            </div>
+            <div class="flex-1">
+              <label for="brand" class="block text-gray-700">Brand:</label>
+              <input
+                type="text"
+                id="brand"
+                name="brand"
+                placeholder="Enter brand"
+                class="border rounded-md p-2 w-full"
+              />
+            </div>
+            <div class="flex-1">
+              <label for="model" class="block text-gray-700">Model:</label>
+              <input
+                type="text"
+                id="model"
+                name="model"
+                placeholder="Enter model"
+                class="border rounded-md p-2 w-full"
+              />
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="bg-gray-700 text-white py-2 px-4 rounded-md hover:bg-gray-600"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
 
-                <label for="model">Model:</label>
-                <input type="text" id="model" name="model" placeholder="Enter model">
-
-                <button type="submit">Search</button>
-            </form>
-        </section>
-
-        <section class="car-list">
-            <h2>Car Listings</h2>
-            <ul id="car-list">
-                <!-- Car listings will be rendered here using Handlebars template -->
-            </ul>
-        </section>
+      <section class="mt-8">
+        <h2 class="text-2xl font-semibold">Car Listings</h2>
+        <ul
+          id="car-list"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4"
+        >
+          <!-- Car listings will be rendered here using Handlebars template -->
+        </ul>
+      </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Car Sales</p>
+    <footer class="bg-gray-200 py-4 mt-8 text-center">
+      <p>&copy; 2023 Car Sales</p>
     </footer>
 
     <!-- Handlebars.js library -->
@@ -53,17 +93,21 @@
 
     <!-- Handlebars template -->
     <script id="car-template" type="text/x-handlebars-template">
-        {{#each cars}}
-        <li>
-            <img src="{{image}}" alt="{{brand}} {{model}}">
-            <h3>{{brand}} {{model}}</h3>
-            <p>Year: {{year}}</p>
-            <p>Price: ${{price}}</p>
+      {{#each cars}}
+        <li class="bg-white shadow-md rounded-md p-4">
+          <img
+            src="{{image}}"
+            alt="{{brand}} {{model}}"
+            class="w-full h-auto"
+          />
+          <h3 class="text-xl font-semibold mt-2">{{brand}} {{model}}</h3>
+          <p class="text-gray-700">Year: {{year}}</p>
+          <p class="text-blue-500">Price: ${{price}}</p>
         </li>
-        {{/each}}
+      {{/each}}
     </script>
 
     <!-- JavaScript file for handling data and rendering templates -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

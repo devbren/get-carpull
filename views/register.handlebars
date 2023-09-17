@@ -1,21 +1,57 @@
-<h2>Sign Up!</h2>
-
-<form class="form login-form">
-  <div class="form-group">
-    <label for="email-login">email:</label>
-    <input class="form-input" type="text" id="email-login" />
-  </div>
-  <div class="form-group">
-    <label for="password-login">password:</label>
-    <input class="form-input" type="password" id="password-login" />
-  </div>  
-  <div class="form-group">
-    <label for="password-login">username:</label>
-    <input class="form-input" type="text" id="username-login" />
-  </div>
-  <div class="form-group">
-    <button class="btn btn-primary" type="submit">Register</button>
-  </div>
-</form>
-
-<script src="/js/login.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up!</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-500 h-screen flex items-center justify-center">
+    <div class="max-w-md w-full p-6 bg-gray-900 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold mb-6 text-green-400">Sign Up!</h2>
+      <form class="login-form">
+        <div class="mb-4">
+          <label for="email-login" class="block text-gray-400">Email:</label>
+          <input
+            class="form-input border rounded-md px-3 py-2 w-full"
+            type="text"
+            id="email-login"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="password-login" class="block text-gray-400"
+            >Password:</label
+          >
+          <input
+            class="form-input border rounded-md px-3 py-2 w-full"
+            type="password"
+            id="password-login"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="username-login" class="block text-gray-400"
+            >Username:</label
+          >
+          <input
+            class="form-input border rounded-md px-3 py-2 w-full"
+            type="text"
+            id="username-login"
+          />
+        </div>
+        <div class="mb-6">
+          <button
+            class="btn btn-primary w-full py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white rounded-md"
+            type="submit"
+          >
+            Register
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="/js/login.js"></script>
+  </body>
+</html>

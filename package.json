@@ -4,8 +4,7 @@
   "description": "Create an appliction to find and buy cars.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
   },
   "author": "",
   "license": "ISC",
@@ -22,5 +21,6 @@
     "mysql2": "^3.6.1",
     "sequelize": "^6.3.5",
     "tailwindcss": "latest"
-  }
+  },
+  "keywords": []
 }
