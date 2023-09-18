@@ -6,8 +6,14 @@ const api = require('./api');
 
 router.use('/', homeRoutes);
 router.use('/api', api);
+
 // router.use('/test', cloudinaryRoutes);
 
+router.use('/', cloudinaryRoutes);
+
+
 module.exports = router;
+
+// Test
 
 
