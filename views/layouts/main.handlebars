@@ -19,16 +19,6 @@
       >
         Get-Carpull
       </h1>
-      {{#if logged_in}}
-      <nav>
-        <button
-          class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
-        >
-          Logout
-        </button>
-      </nav>
-      {{/if}}
-    </section>
     <header class="bg-gray-900 p-4">
       <h1 class="text-3xl text-green-400 font-serif font-semibold">
         Get Car-Pull
@@ -42,6 +32,16 @@
         </ul>
       </nav>
     </header>
+      {{#if logged_in}}
+      <nav>
+        <button
+          class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
+        >
+          Logout
+        </button>
+      </nav>
+      {{/if}}
+    </section>
     <main class="container container-fluid mt-5">{{{ body }}}</main>
     <footer></footer>
 
