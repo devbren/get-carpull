@@ -72,6 +72,38 @@
           </div>
         </form>
       </section>
+=======
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Car-Pull</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-bar">
+            <h2>Search for Cars</h2>
+            <form id="car-search-form">
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" placeholder="Enter year">
+
+                <label for="brand">Brand:</label>
+                <input type="text" id="brand" name="brand" placeholder="Enter brand">
+
 
       <section class="mt-8">
         <h2 class="text-2xl font-semibold">Car Listings</h2>
@@ -93,6 +125,7 @@
 
     <!-- Handlebars template -->
     <script id="car-template" type="text/x-handlebars-template">
+
       {{#each cars}}
         <li class="bg-white shadow-md rounded-md p-4">
           <img
@@ -103,11 +136,24 @@
           <h3 class="text-xl font-semibold mt-2">{{brand}} {{model}}</h3>
           <p class="text-gray-700">Year: {{year}}</p>
           <p class="text-blue-500">Price: ${{price}}</p>
+=======
+        {{#each cars}}
+        <li>
+            <img src={{photoURL}} alt={{make}} {{model}}>
+            <h3>{{brand}} {{model}}</h3>
+            <p>Year: {{year}}</p>
+            <p>Price: ${{price}}</p>
+
         </li>
       {{/each}}
     </script>
 
     <!-- JavaScript file for handling data and rendering templates -->
     <script src="script.js"></script>
+
   </body>
+=======
+</body>
+
+
 </html>
