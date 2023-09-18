@@ -1,3 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!--Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-500 h-screen flex items-center justify-center">
+    <div class="max-w-md w-full p-6 bg-gray-900 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold mb-6 text-green-400">Login</h2>
+      <form class="login-form">
+        <div class="mb-4">
+          <label for="email-login" class="block text-gray-400">Email:</label>
+          <input
+            class="form-input border rounded-md px-3 py-2 w-full"
+            type="text"
+            id="email-login"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="password-login" class="block text-gray-400"
+            >Password:</label
+          >
+          <input
+            class="form-input border rounded-md px-3 py-2 w-full"
+            type="password"
+            id="password-login"
+          />
+        </div>
+        <div class="mb-6">
+          <button
+            class="btn btn-primary w-full py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white rounded-md"
+            type="submit"
+          >
+            Login
+          </button>
+        </div>
+      </form>
+      <h4 class="mb-2 text-gray-500">New to Get-Carpull?</h4>
+      <div class="mb-6">
+        <a
+          href="http://localhost:3001/register"
+          class="text-blue-500 hover:underline"
+          >Register now!</a
+        >
+      </div>
+    </div>
+    <script src="/js/login.js"></script>
+  </body>
+</html>
+=======
 <link rel="stylesheet" href="../public/css/styles.css">
 <h2>Login</h2>
 

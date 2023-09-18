@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get-Carpull</title>
+    <link rel="stylesheet" href="../../public/css/style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get-Carpull</title>
-  <link rel="stylesheet" href="../../public/css/style.css">
-</head>
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-500">
+    <header class="display-flex justify-space-between align-center p-2">
+      <h1
+        class="bg-gray-900 p-4 text-3xl text-green-400 font-serif font-semibold"
+      >
+        Get-Carpull
+      </h1>
+      {{#if logged_in}}
+      <nav>
+        <button
+          class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
+        >
+          Logout
+        </button>
+      </nav>
+      {{/if}}
+    </header>
+    <main class="container container-fluid mt-5">{{{ body }}}</main>
+    <footer></footer>
 
-<body>
-  <header class="display-flex justify-space-between align-center p-2">
-    <h1>
-      Get-Carpull
-    </h1>
     {{#if logged_in}}
-    <nav>
-      <button class="btn" id="logout">logout</button>
-    </nav>
+    <script src="/js/logout.js"></script>
     {{/if}}
-  </header>
-  <main class="container container-fluid mt-5">
-    {{{ body }}}
-  </main>
-  <footer>
-      
-  </footer>
-
-  {{#if logged_in}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-</body>
-
+  </body>
 </html>
 
