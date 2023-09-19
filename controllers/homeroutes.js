@@ -6,13 +6,14 @@ router.get('/', withAuth, async (req, res) => {
   try {
     const carData = await Cars.findAll({
       //test if this works
-      where: { forSale: 1 }
+      where: { forSale: 1 },
     });
-    //console.log(carData)
+    // const car = carData.get({ plain: true })
+    // console.log(car)
 
     // renders based off homepage.handlebars
     res.render('homepage', {
-      // users,
+      carData,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -25,7 +26,7 @@ router.get('/login', (req, res) => {
     res.redirect('/');
     return;
   } else {
-  res.render('login');
+    res.render('login');
   }
 });
 
