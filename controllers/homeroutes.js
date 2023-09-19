@@ -12,7 +12,7 @@ router.get('/', withAuth, async (req, res) => {
 
     // renders based off homepage.handlebars
     res.render('homepage', {
-      users,
+      // users,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
