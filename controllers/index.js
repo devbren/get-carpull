@@ -11,7 +11,7 @@ router.use('/api', api);
 
 router.use('/', homeRoutes);
 
-router.use('/', cloudinaryRoutes);
+// router.use('/', cloudinaryRoutes);
 
 
 module.exports = router;

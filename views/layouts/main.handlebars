@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Get-Carpull</title>
-    <link rel="stylesheet" href="../../public/css/style.css" />
 
-    <!-- Tailwind CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-gray-500">
-    <section class="display-flex justify-space-between align-center p-2">
-      {{!-- <h1
-        class="bg-gray-900 p-4 text-3xl text-green-400 font-serif font-semibold"
-      >
-        Get-Carpull
-      </h1> --}}
-      {{#if logged_in}}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get-Carpull</title>
+  <link rel="stylesheet" href="../../public/css/style.css" />
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-400">
+  <section class="display-flex justify-space-between align-center p-2">
+    <h1 class="bg-gray-900 p-4 text-3xl text-green-400 font-serif font-semibold">
+      Get-Carpull
+    </h1>
+    {{#if logged_in}}
     <header class="bg-gray-900 p-4">
-      <h1 class="text-3xl text-green-400 font-serif font-semibold">
+      {{!-- <h1 class="text-3xl text-green-400 font-serif font-semibold">
         Get Car-Pull
-      </h1>
+      </h1> --}}
       <nav class="mt-4">
         <ul class="flex space-x-4">
           <li><a href="#" class="text-gray-300">Home</a></li>
@@ -33,21 +29,63 @@
         </ul>
       </nav>
     </header>
-      <nav>
-        <button
-          class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
-        >
-          Logout
-        </button>
-      </nav>
-      {{/if}}
+    <nav>
+      <section class="bg-green-400 shadow-md rounded-md p-4">
+        <h2 class="text-2xl font-semibold mb-4">Search for Cars</h2>
+        <form id="car-search-form" class="space-y-4">
+          <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+            <div class="flex-1">
+              <label for="year" class="block text-gray-700">Year:</label>
+              <input type="number" id="year" name="year" placeholder="Enter year"
+                class="border rounded-md p-2 w-full" />
+            </div>
+            <div class="flex-1">
+              <label for="brand" class="block text-gray-700">Brand:</label>
+              <input type="text" id="brand" name="brand" placeholder="Enter brand"
+                class="border rounded-md p-2 w-full" />
+            </div>
+            <div class="flex-1">
+              <label for="model" class="block text-gray-700">Model:</label>
+              <input type="text" id="model" name="model" placeholder="Enter model"
+                class="border rounded-md p-2 w-full" />
+            </div>
+            <div>
+              <button type="submit" class="bg-gray-700 text-white py-2 px-4 rounded-md hover:bg-gray-600">
+                Search
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+    </nav>
+    <section class="flex flex-row">
+      {{#each carData}}
+      <div class="card card-compact w-96 bg-gray-300 shadow-xl m-10 p-3 rounded-md text-xl">
+        <figure><img src={{dataValues.photoURL}} alt={{dataValues.model}} /></figure>
+        <div class="card-body">
+          <h2 class="card-title">{{dataValues.model}} {{dataValues.make}}</h2>
+          <li>Year: {{dataValues.year}}</li>
+          <li>Make: {{dataValues.make}}</li>
+          <li>Model: {{dataValues.model}}</li>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      {{/each}}
     </section>
-    <main class="container container-fluid mt-5">{{{ body }}}</main>
-    <footer></footer>
-
-    {{#if logged_in}}
-    <script src="/js/logout.js"></script>
+    <button class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
+      Logout
+    </button>
     {{/if}}
-  </body>
-</html>
+  </section>
+  <main class="container container-fluid mt-5">{{{ body }}}</main>
+  <footer></footer>
 
+  {{#if logged_in}}
+  <script src="public/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
