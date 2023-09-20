@@ -4,16 +4,14 @@
         "model": "Civic",
         "year": "2002",
         "forSale": true,
-        "photoURL":"https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733406/Honda_Civis_ro0rlu.jpg"
-        
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733406/Honda_Civis_ro0rlu.jpg"
     },
     {
         "make": "Jeep",
         "model": "Grand Cherokee",
         "year": "2004",
         "forSale": false,
-        "photoURL":"https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733271/Jeep_Cherokee_ugd9qj.jpg"
-
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733271/Jeep_Cherokee_ugd9qj.jpg"
     },
     {
         "make": "Nissan",
@@ -21,7 +19,6 @@
         "year": "2007",
         "forSale": false,
         "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694745346/GPC2_u7igwi.png"
-
     },
     {
         "make": "Buick",
@@ -29,7 +26,6 @@
         "year": "2017",
         "forSale": false,
         "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694745346/GPC2_u7igwi.png"
-
     },
     {
         "make": "Jeep",
@@ -37,7 +33,6 @@
         "year": "2020",
         "forSale": false,
         "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733494/Jeep_Renegade_plgks7.jpg"
-
     },
     {
         "make": "Volkswagon",
@@ -45,7 +40,6 @@
         "year": "1968",
         "forSale": false,
         "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733491/Volkswagon_Bus_cuauze.jpg"
-
     },
     {
         "make": "Jeep",
@@ -53,7 +47,6 @@
         "year": "2022",
         "forSale": false,
         "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733271/Jeep_Cherokee_ugd9qj.jpg"
-
     },
     {
         "make": "Honda",
@@ -61,7 +54,6 @@
         "year": "2021",
         "forSale": false,
         "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733406/Honda_Civis_ro0rlu.jpg"
-
     },
     {
         "make": "Ford",
@@ -69,7 +61,6 @@
         "year": "2019",
         "forSale": true,
         "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733439/Ford_Escape_a8xgor.jpg"
-
     },
     {
         "make": "Subaru",
@@ -77,7 +68,6 @@
         "year": "2019",
         "forSale": true,
         "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694735678/Subaru_Outback_osj1oh.jpg"
-
     },
     {
         "make": "Ford",
@@ -85,7 +75,6 @@
         "year": "2022",
         "forSale": false,
         "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694735678/Ford_Mustang_e8fgar.jpg"
-
     },
     {
         "make": "Dodge",
@@ -93,15 +82,13 @@
         "year": "2021",
         "forSale": false,
         "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733436/Dodge_Charger_cgzm5c.jpg"
-
     },
     {
         "make": "Ford",
         "model": "F150 Truck",
         "year": "2020",
         "forSale": true,
-        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733439/Ford_Pickup_xjw7ih.jpg"
-
+        "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694745346/GPC2_u7igwi.png"
     },
     {
         "make": "Chevrolet",
@@ -109,7 +96,6 @@
         "year": "2022",
         "forSale": true,
         "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694733437/camero_u0qmpr.jpg"
-
     },
     {
         "make": "Infiniti",
@@ -117,6 +103,5 @@
         "year": "2011",
         "forSale": true,
         "photoURL": "https://res.cloudinary.com/dcjgjudgr/image/upload/v1694745346/GPC2_u7igwi.png"
-
     }
 ]

@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Get-Carpull</title>
-  <link rel="stylesheet" href="../../public/css/style.css" />
+
+  {{!--
+  <link rel="stylesheet" href="../../public/css/style.css" /> --}}
   <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 </head>
@@ -17,16 +19,16 @@
     </h1>
     {{#if logged_in}}
     <header class="bg-gray-900 p-4">
-      {{!-- <h1 class="text-3xl text-green-400 font-serif font-semibold">
-        Get Car-Pull
-      </h1> --}}
-      <nav class="mt-4">
+      <nav class="mt-4 flex justify-between">
         <ul class="flex space-x-4">
           <li><a href="#" class="text-gray-300">Home</a></li>
           <li><a href="#" class="text-gray-300">Cars</a></li>
           <li><a href="#" class="text-gray-300">About Us</a></li>
           <li><a href="#" class="text-gray-300">Contact Us</a></li>
         </ul>
+        <button class="flex flex-end bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
+          Logout
+        </button>
       </nav>
     </header>
     <nav>
@@ -59,25 +61,25 @@
       </section>
 
     </nav>
-    <section class="flex flex-row">
+    <section class="container:mx-auto flex flex-wrap lg:flex-row md:flex-col sm:flex-col">
       {{#each carData}}
       <div class="card card-compact w-96 bg-gray-300 shadow-xl m-10 p-3 rounded-md text-xl">
-        <figure><img src={{dataValues.photoURL}} alt={{dataValues.model}} /></figure>
+        <img class="object-contain h-48 w-full" src={{dataValues.photoURL}} alt={{dataValues.model}} />
         <div class="card-body">
-          <h2 class="card-title">{{dataValues.model}} {{dataValues.make}}</h2>
-          <li>Year: {{dataValues.year}}</li>
-          <li>Make: {{dataValues.make}}</li>
-          <li>Model: {{dataValues.model}}</li>
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Buy Now</button>
+          <h2 class="card-title font-bold">{{dataValues.model}} {{dataValues.make}}</h2>
+          <ul class="list-none">
+            <li>Year: {{dataValues.year}}</li>
+            <li>Make: {{dataValues.make}}</li>
+            <li>Model: {{dataValues.model}}</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn btn-primary text-white py-2 bg-blue-500 px-4 rounded-md hover:bg-blue-600">Buy
+              Now</button>
           </div>
         </div>
       </div>
       {{/each}}
     </section>
-    <button class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
-      Logout
-    </button>
     {{/if}}
   </section>
   <main class="container container-fluid mt-5">{{{ body }}}</main>
