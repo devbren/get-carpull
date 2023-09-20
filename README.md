@@ -12,7 +12,6 @@ This is an application for the user to look at, explore and purchase a car onlin
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
-* [Usage](#usage)
 * [Links](#links)
 * [Licenses](#license)
 * [Badges](#badges)
@@ -45,16 +44,8 @@ THEN I can go back and see a list of my vehicles.
 In order to run this application you must have the following installed: Visual Studio Code, node, npm, Tailwind, Cloudinary and Heroku.
 
 ## Links
-link to video: 
-
-
-
-Images from application:
-
-
-
-## Usage
-
+[Heroku Link](https://git.heroku.com/get-carpull.git)
+![Heroku Deployment](/public/img/HerokuDeployment.png)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
